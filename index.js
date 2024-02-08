@@ -10,9 +10,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    //console.log(req.body);
-    console.log("ready!");
-    res.status(200).send('Probe received');
+    console.log("Data received!");
+    res.status(200).send("Data received");
 
     convertToCsv(req.body);
 });
